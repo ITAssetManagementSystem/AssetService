@@ -1,0 +1,6 @@
+/home/rudra/repo/IT_Asset_Mgmt_System/AssetService/src/main/java/com/company/assetservice/service/AssetService.java
+/home/rudra/repo/IT_Asset_Mgmt_System/AssetService/src/main/java/com/company/assetservice/config/DatabaseInitializer.java
+/home/rudra/repo/IT_Asset_Mgmt_System/AssetService/src/main/java/com/company/assetservice/AssetServiceApplication.java
+/home/rudra/repo/IT_Asset_Mgmt_System/AssetService/src/main/java/com/company/assetservice/model/Asset.java
+/home/rudra/repo/IT_Asset_Mgmt_System/AssetService/src/main/java/com/company/assetservice/repository/AssetRepository.java
+/home/rudra/repo/IT_Asset_Mgmt_System/AssetService/src/main/java/com/company/assetservice/controller/AssetController.java

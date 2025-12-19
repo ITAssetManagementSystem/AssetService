@@ -1,0 +1,46 @@
+{
+    "info": {
+        "name": "Asset Service",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "http://localhost:8081"
+        }
+    ],
+    "item": [
+        {
+            "name": "Health",
+            "request": {
+                "method": "GET",
+                "url": "{{baseUrl}}/actuator/health"
+            }
+        },
+        {
+            "name": "Init DB",
+            "request": {
+                "method": "POST",
+                "url": "{{baseUrl}}/assets/init-db"
+            }
+        },
+        {
+            "name": "Create Asset",
+            "request": {
+                "method": "POST",
+                "url": "{{baseUrl}}/assets",
+                "body": {
+                    "mode": "raw",
+                    "raw": "{ \"name\": \"Dell Laptop\", \"type\": \"LAPTOP\" }"
+                }
+            }
+        },
+        {
+            "name": "List Assets",
+            "request": {
+                "method": "GET",
+                "url": "{{baseUrl}}/assets"
+            }
+        }
+    ]
+}
