@@ -4,3 +4,4 @@
 /home/rudra/repo/IT_Asset_Mgmt_System/AssetService/src/main/java/com/company/assetservice/model/Asset.java
 /home/rudra/repo/IT_Asset_Mgmt_System/AssetService/src/main/java/com/company/assetservice/repository/AssetRepository.java
 /home/rudra/repo/IT_Asset_Mgmt_System/AssetService/src/main/java/com/company/assetservice/controller/AssetController.java
+/home/rudra/repo/IT_Asset_Mgmt_System/AssetService/src/main/java/com/company/assetservice/config/CorsConfig.java

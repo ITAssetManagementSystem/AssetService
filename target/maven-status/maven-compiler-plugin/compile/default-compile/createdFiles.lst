@@ -2,5 +2,6 @@ com/company/assetservice/AssetServiceApplication.class
 com/company/assetservice/controller/AssetController.class
 com/company/assetservice/model/Asset.class
 com/company/assetservice/service/AssetService.class
+com/company/assetservice/config/CorsConfig.class
 com/company/assetservice/config/DatabaseInitializer.class
 com/company/assetservice/repository/AssetRepository.class
