@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: it-asset-ingress
+  namespace: it-asset
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  rules:
+    - host: asset.sikshasathi.tech
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: asset-service
+                port:
+                  number: 80

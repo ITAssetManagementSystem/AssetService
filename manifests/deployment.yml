@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: asset-service
+  namespace: it-asset
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: asset-service
+  template:
+    metadata:
+      labels:
+        app: asset-service
+    spec:
+      containers:
+        - name: asset-service
+          image: devacr231225.azurecr.io/asset-service:v1
+          ports:
+            - containerPort: 8081
+          env:
+            - name: SERVER_PORT
+              value: "8081"
+            - name: DB_URL
+              value: jdbc:postgresql://dev-postgres2312256060.postgres.database.azure.com:5432/assetdb
+            - name: DB_USERNAME
+              value: pgadmin
+            - name: DB_PASSWORD
+              value: Strong@123
+
+          # ✅ CORRECT HEALTH CHECKS
+          readinessProbe:
+            httpGet:
+              path: /actuator/health
+              port: 8081
+            initialDelaySeconds: 20
+            periodSeconds: 10
+            failureThreshold: 3
+
+          livenessProbe:
+            httpGet:
+              path: /actuator/health
+              port: 8081
+            initialDelaySeconds: 40
+            periodSeconds: 20
