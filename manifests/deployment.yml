@@ -22,7 +22,7 @@ spec:
             - name: SERVER_PORT
               value: "8081"
             - name: DB_URL
-              value: jdbc:postgresql://dev-postgres2312256060.postgres.database.azure.com:5432/assetdb
+              value: jdbc:postgresql://dev-postgres271225.postgres.database.azure.com:5432/assetdb
             - name: DB_USERNAME
               value: pgadmin
             - name: DB_PASSWORD
