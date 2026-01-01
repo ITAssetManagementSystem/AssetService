@@ -10,7 +10,7 @@ jobs:
     cd:
         uses: ITAssetManagementSystem/CommonWorkflows/.github/workflows/cd-aks.yml@main
         with:
-            service_name: orders
+            service_name: asset-service
             dockerfile_path: Dockerfile
             manifests_path: manifests
-            namespace: orders
+            namespace: it-asset
