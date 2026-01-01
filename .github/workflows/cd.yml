@@ -18,3 +18,4 @@ jobs:
             dockerfile_path: Dockerfile
             manifests_path: manifests
             namespace: it-asset
+        secrets: inherit
