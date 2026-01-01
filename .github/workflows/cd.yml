@@ -18,4 +18,5 @@ jobs:
             dockerfile_path: Dockerfile
             manifests_path: manifests
             namespace: it-asset
+            acr_name: devacr231225
         secrets: inherit
