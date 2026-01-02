@@ -15,14 +15,14 @@ spec:
     spec:
       containers:
         - name: asset-service
-          image: devacr231225.azurecr.io/asset-service:v1
+          image: devacr301225.azurecr.io/asset-service:v1
           ports:
             - containerPort: 8081
           env:
             - name: SERVER_PORT
               value: "8081"
             - name: DB_URL
-              value: jdbc:postgresql://dev-postgres271225.postgres.database.azure.com:5432/assetdb
+              value: jdbc:postgresql://dev-postgres301225.postgres.database.azure.com:5432/assetdb
             - name: DB_USERNAME
               value: pgadmin
             - name: DB_PASSWORD
