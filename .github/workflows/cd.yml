@@ -1,10 +1,9 @@
-name: CD - Deploy Asset Service (Dev)
+name: CD - Deploy to AKS
 
 on:
     push:
         branches:
             - main
-
     workflow_dispatch:
 
 permissions:
