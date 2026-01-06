@@ -7,8 +7,9 @@ on:
 
 jobs:
   ci:
-    uses: ITAssetManagementSystem/CommonWorkflows/.github/workflows/ci-aks.yml@main
+    uses: ITAssetManagementSystem/CommonWorkflows/.github/workflows/ci-helm-aks.yml@main
     with:
       service_name: asset-service
       dockerfile_path: Dockerfile
-      manifests_path: manifests
+      chart_path: asset-service
+      values_file: asset-service/values.yaml

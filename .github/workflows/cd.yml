@@ -1,9 +1,10 @@
-name: CD - Deploy to AKS
+name: CD - Deploy Asset Service (Dev)
 
 on:
     push:
         branches:
             - main
+
     workflow_dispatch:
 
 permissions:
@@ -11,12 +12,14 @@ permissions:
     contents: read
 
 jobs:
-    cd:
-        uses: ITAssetManagementSystem/CommonWorkflows/.github/workflows/cd-aks.yml@main
+    deploy:
+        uses: ITAssetManagementSystem/CommonWorkflows/.github/workflows/cd-helm-aks.yml@main
         with:
             service_name: asset-service
-            dockerfile_path: Dockerfile
-            manifests_path: manifests
+            chart_path: asset-service
+            values_file: asset-service/values.yaml
             namespace: it-asset
             acr_name: devacr301225
+            aks_name: dev-aks
+            resource_group: dev-rg
         secrets: inherit
