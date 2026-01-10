@@ -15,10 +15,10 @@ jobs:
         uses: ITAssetManagementSystem/CommonWorkflows/.github/workflows/cd-helm-aks.yml@main
         with:
             service_name: asset-service
-            chart_path: asset-service
-            values_file: asset-service/values.yaml
             namespace: it-asset
+            values_file: helm/values.yaml
+            chart_version: 1.0.0
             acr_name: devacr301225
             aks_name: dev-aks
-            resource_group: dev-rg
+            resource_group: rg-dev-aks
         secrets: inherit
