@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: devacr301225.azurecr.io/asset-service
-  tag: 4cf35b5e35bbcad36ffe408c663cfdeaa2658e4f
+  tag: a46dde3fcc6776c42361f66b43c875f8d8b4a2fd
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
