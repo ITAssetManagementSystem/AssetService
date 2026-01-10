@@ -20,5 +20,5 @@ jobs:
             chart_version: 1.0.0
             acr_name: devacr301225
             aks_name: dev-aks
-            resource_group: rg-dev-aks
+            resource_group: dev-rg
         secrets: inherit
