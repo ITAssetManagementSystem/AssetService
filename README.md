@@ -24,3 +24,9 @@ Manages IT assets. External DB. Cloud-ready.
 
 ## Cloud Migration
 Change DB_URL, USERNAME, PASSWORD → Azure DB
+
+## Repo Add Command
+argocd repo add oci://devacr301225.azurecr.io/helm/service \
+  --type oci \
+  --username devacr301225 \
+  --password <password>

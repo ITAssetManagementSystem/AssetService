@@ -7,15 +7,14 @@ spec:
   project: default
 
   sources:
-    # 1️⃣ Helm chart from ACR
-    - repoURL: oci://devacr301225.azurecr.io/helm
+    - repoURL: oci://devacr301225.azurecr.io/helm/service
       chart: service
       targetRevision: 1.0.0
       helm:
+        passCredentials: true
         valueFiles:
           - $values/helm/values.yaml
 
-    # 2️⃣ Values from Git repo
     - repoURL: https://github.com/ITAssetManagementSystem/AssetService.git
       targetRevision: main
       ref: values
